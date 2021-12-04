@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+    <script>
+        var n, j, flag= true ;
+        j = prompt("input your number", '')
+        n = parseInt(j)
+        for (i = 2; i <= n - 1; i++){
+            if (n % i == 0) {
+                flag = false;
+                break;
+            }
+        }
+            
+
+        // Check and display alert message 
+        if (flag == true)
+            alert(n + " is prime");
+        else
+            alert(n + " is not prime"); 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

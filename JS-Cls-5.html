@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+
+    <script>
+        document.write(stackWork + "<br>")
+        var stackWork = new Array("Lenny", "Harold", "Mary", "Jean", "Sal");
+        document.write(stackWork + "<br>")
+        stackWork.pop() //removes the last element of an array and returns it.
+        document.write(stackWork + "<br>")
+        stackWork.push("Lenny");   //adds a value to the end of the array (top of the stack) and leaves it there
+        document.write("<br> after push>>>" + stackWork)
+
+        stackWork.shift();
+        document.write("<br> after shift >>>" + stackWork)
+
+        stackWork.unshift("Willie"); //is similar to the push( ) method, except that the new element is put at the front of the array
+        document.write("<br> after unshift >>>" + stackWork)
+
+
+        //splice(start, delete, data)
+        stackWork.splice(1, 0, "Sillie"); //method allows you to insert elements, delete one or more elements, or change the value of an array elemen
+        document.write("<br> after splice >>>" + stackWork)
+
+        function hiThere() {
+            document.write("<br>Hi there!");
+        }
+        hiThere();
+
+        function zog(a, b) {
+            var sum = 0;
+            sum = a + b;
+            document.write("<br>your zog result is " + sum)
+        }
+
+        //  aa = parseInt(prompt('Enter a number: '));
+        //  vv = parseInt(prompt('Enter a number: '));
+        // zog(aa, vv);
+
+        // a=Math.max(aa,vv);
+        // document.write("<br> greatest number is >> "+a)
+
+        // b= --a
+        // document.write("<br> incr number is >> "+b)
+        
+        // if(a==555){
+        //     document.write("<br>conditiuon is true")
+        // }
+        // else if(a<1000){
+        //     document.write("<br>a is gt 100")
+        // }
+        // else if(a<1000 && a<2000){
+        //     document.write("<br>a is gt 200")
+        // }
+        // else if(a>2000 && a<3000){
+        //     document.write("<br>a is gt 300")
+        // }
+        // else{
+        //     document.write("<br> tomar input thik nai!!!")
+        // }
+       
+        marks = parseInt(prompt('Enter your marks: '));
+        if(marks>=80 && marks<=100){
+            document.write("<br> A+")
+        }
+        else if(marks>=70 && marks<=80){
+            document.write("<br> A-")
+        }
+        else if(marks>=60 && marks<=70){
+            document.write("<br> B+")
+        }
+        else if(marks>=50 && marks<=60){
+            document.write("<br> PASS")
+        }
+        else if(marks>=0 && marks<50){
+            document.write("<br> FAIL")
+        }
+        else{
+            document.write("<br> Tomar input thik dao")
+        }
+
+
+        
+    </script>
+
+<body>
+
+</body>
+
+</html>

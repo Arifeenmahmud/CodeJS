@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Hexadecimal Values </title>
+    <script language="JavaScript">
+
+// program to find the largest among three numbers
+
+//take input from the user
+const num1 = parseFloat(prompt("Enter first number: "));
+const num2 = parseFloat(prompt("Enter second number: "));
+const num3 = parseFloat(prompt("Enter third number: "));
+// const num1 = 11;
+// const num2 = 33;
+// const num3 = 2;
+let largest;
+
+// check the condition
+if(num1 >= num2 && num1 >= num3) {
+    largest = num1;
+}
+else if (num2 >= num1 && num2 >= num3) {
+    largest = num2;
+}
+else {
+    largest = num3;
+}
+
+// display the result
+console.log("<br> The largest number is " + largest);
+document.write("<br>The largest number is " + largest);
+
+    </script>
+
+<body>
+
+</body>
